@@ -60,9 +60,12 @@ pip install -r requirements.txt
 5. Run the application
 With the dependencies installed, you can now run the project locally. To start the Django development server:
 
+6. Make migrations
 
-python manage.py runserver
-Navigate to http://127.0.0.1:8000/ in your browser to see the application.
+py manage.py makemigrations
+
+py manage.py migrate
+
 
 
 ## Creating a Teacher Account
@@ -71,8 +74,11 @@ To log in as a teacher, you must first create a teacher user via the django admi
 
 1. Create a superuser (admin account)
 
-python manage.py createsuperuser
+py manage.py createsuperuser
 
-start the server and log into the admin panel at http://127.0.0.1:8000/admin
+start the server(py manage.py runserver) and log into the admin panel at http://127.0.0.1:8000/admin
 
 inside the admin dashboard add a new teacher entry and set their credentials.
+
+
+Navigate to http://127.0.0.1:8000/ in your browser to see the application.
