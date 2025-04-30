@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Assignment for {{ student.name }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Assignment</button>
+</form>
+<a href="{% url 'home' %}">← Back</a>
+{% endblock %}

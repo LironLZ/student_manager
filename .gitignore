@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Python Bytecode
+__pycache__/
+*.pyc
+
+# Django files
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
