@@ -32,17 +32,20 @@ Create a virtual environment in your project directory:
 
 
 python -m venv venv
+
 For macOS/Linux:
 Create a virtual environment in your project directory:
 
 
 python3 -m venv venv
+
 3. Activate the virtual environment
 After creating the virtual environment, activate it.
 
 For Windows:
 
 venv\Scripts\activate
+
 For macOS/Linux:
 
 source venv/bin/activate
@@ -53,9 +56,23 @@ Install all the necessary packages listed in the requirements.txt file:
 
 
 pip install -r requirements.txt
+
 5. Run the application
 With the dependencies installed, you can now run the project locally. To start the Django development server:
 
 
 python manage.py runserver
 Navigate to http://127.0.0.1:8000/ in your browser to see the application.
+
+
+## Creating a Teacher Account
+
+To log in as a teacher, you must first create a teacher user via the django admin panel:
+
+1. Create a superuser (admin account)
+
+python manage.py createsuperuser
+
+start the server and log into the admin panel at http://127.0.0.1:8000/admin
+
+inside the admin dashboard add a new teacher entry and set their credentials.
