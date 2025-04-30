@@ -16,9 +16,6 @@ This is a simple and user-friendly Student Management System built using Django 
 - **Frontend:** HTML, Bootstrap 5, JavaScript
 - **Database:** SQLite (default with Django)
 
-## 📸 Screenshots
-
-![Screenshot](screenshots/homepage.png)
 
 ## 💻 Setup Instructions
 
